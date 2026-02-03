@@ -1,0 +1,10 @@
+# Build artifacts
+dist/
+
+# Editor/IDE
+.idea/
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store

@@ -1,0 +1,25 @@
+{
+  "name": "aseprite_extension",
+  "displayName": "Aseprite extension template",
+  "description": "Template for aseprite extension",
+  "version": "0.1",
+  "author": {
+    "name": "Dmytro Vakarchuk",
+    "email": "",
+    "url": "https://github.com/dipflix"
+  },
+  "contributors": [],
+  "publisher": "dipflix",
+  "license": "CC-BY-4.0",
+  "categories": [
+    "Scripts",
+    "Keys"
+  ],
+  "contributes": {
+    "scripts": [
+      {
+        "path": "./extension.lua"
+      }
+    ]
+  }
+}

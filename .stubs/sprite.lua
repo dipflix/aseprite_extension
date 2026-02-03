@@ -1,0 +1,62 @@
+﻿---@meta
+-- Aseprite API stub: https://www.aseprite.org/api/sprite
+
+---@class Sprite
+---@field width integer
+---@field height integer
+---@field bounds Rectangle
+---@field gridBounds Rectangle
+---@field pixelRatio Size
+---@field selection Selection
+---@field filename string
+---@field id integer
+---@field isModified boolean
+---@field colorSpace ColorSpace
+---@field colorMode ColorMode
+---@field spec ImageSpec
+---@field undoHistory { undoSteps:integer, redoSteps:integer }
+---@field frames Frame[]
+---@field palettes Palette[]
+---@field layers Layer[]
+---@field cels Cel[]
+---@field tags Tag[]
+---@field slices Slice[]
+---@field tilesets Tileset[]
+---@field backgroundLayer Layer|nil
+---@field transparentColor integer
+---@field color Color
+---@field data string
+---@field properties Properties
+---@field resize fun(self:Sprite, widthOrSize:integer|Size, height?:integer)
+---@field crop fun(self:Sprite, rectOrX:Rectangle|integer, y?:integer, w?:integer, h?:integer)
+---@field saveAs fun(self:Sprite, filename:string)
+---@field saveCopyAs fun(self:Sprite, filename:string)
+---@field close fun(self:Sprite)
+---@field loadPalette fun(self:Sprite, filename:string)
+---@field setPalette fun(self:Sprite, palette:Palette)
+---@field assignColorSpace fun(self:Sprite, colorSpace:ColorSpace)
+---@field convertColorSpace fun(self:Sprite, colorSpace:ColorSpace)
+---@field newLayer fun(self:Sprite):Layer
+---@field newGroup fun(self:Sprite):Layer
+---@field deleteLayer fun(self:Sprite, layerOrName:Layer|string)
+---@field newFrame fun(self:Sprite, frameOrNumber:Frame|integer):Frame
+---@field newEmptyFrame fun(self:Sprite, frameNumber:integer):Frame
+---@field deleteFrame fun(self:Sprite, frame:Frame|integer)
+---@field newCel fun(self:Sprite, layer:Layer, frame:Frame|integer, image?:Image, position?:Point):Cel
+---@field deleteCel fun(self:Sprite, cel:Cel)
+---@field newTag fun(self:Sprite, fromFrame:integer, toFrame:integer):Tag
+---@field deleteTag fun(self:Sprite, tagOrName:Tag|string)
+---@field newSlice fun(self:Sprite, rect?:Rectangle):Slice
+---@field deleteSlice fun(self:Sprite, sliceOrName:Slice|string)
+---@field newTileset fun(self:Sprite, arg1?:Grid|Rectangle|Tileset, numTiles?:integer):Tileset
+---@field deleteTileset fun(self:Sprite, tilesetOrId:Tileset|integer)
+---@field newTile fun(self:Sprite, tileset:Tileset):Tile
+
+---@overload fun():Sprite
+---@overload fun(width:integer, height:integer):Sprite
+---@overload fun(width:integer, height:integer, colorMode:ColorMode):Sprite
+---@overload fun(filename:string):Sprite
+---@return Sprite
+function Sprite() end
+
+Sprite = Sprite

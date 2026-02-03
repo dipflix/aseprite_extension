@@ -1,0 +1,31 @@
+﻿---@meta
+-- Aseprite API stub: https://www.aseprite.org/api/layer
+
+---@class Layer
+---@field sprite Sprite
+---@field name string
+---@field opacity integer|nil
+---@field blendMode BlendMode|integer|nil
+---@field layers Layer[]|nil
+---@field parent Sprite|Layer
+---@field stackIndex integer
+---@field uuid Uuid
+---@field isImage boolean
+---@field isGroup boolean
+---@field isTilemap boolean
+---@field isTransparent boolean
+---@field isBackground boolean
+---@field isEditable boolean
+---@field isVisible boolean
+---@field isContinuous boolean
+---@field isCollapsed boolean
+---@field isExpanded boolean
+---@field isReference boolean
+---@field cels Cel[]
+---@field color Color
+---@field data string
+---@field properties Properties
+---@field tileset Tileset|nil
+---@field cel fun(self:Layer, frame:Frame|integer):Cel|nil
+
+Layer = Layer
